@@ -2,16 +2,16 @@
 
 [![crates.io](https://img.shields.io/crates/v/minipdf.svg)](https://crates.io/crates/minipdf)
 [![docs.rs](https://img.shields.io/docsrs/minipdf)](https://docs.rs/minipdf)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](../LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 The experimental native Rust implementation of MiniPdf. It provides the
 reusable `minipdf` crate and the `minipdf-cli` package, whose installed binary is
 named `minipdf`.
 
-[Project portal](../README.md) ·
+[Project portal](https://github.com/mini-software/MiniPdf) ·
 [crates.io](https://crates.io/crates/minipdf) ·
 [API documentation](https://docs.rs/minipdf) ·
-[.NET implementation](../documents/README.nuget.md)
+[.NET implementation](https://github.com/mini-software/MiniPdf/blob/main/documents/README.nuget.md)
 
 > The Rust implementation is under active development and is not yet
 > feature-equivalent with MiniPdf for .NET. It currently converts XLSX, DOCX,
@@ -154,20 +154,9 @@ cargo run -p minipdf-cli -- path\to\input.docx
 
 ## Visual Benchmarks
 
-Run shared fixtures against Microsoft 365 and LibreOffice from the repository root:
-
-```powershell
-.\scripts\Run-Rust-Benchmark.ps1 -Suite classic -Format xlsx
-.\scripts\Run-Rust-Benchmark.ps1 -Suite classic -Format docx
-.\scripts\Run-Rust-Benchmark.ps1 -Suite issue -Format xlsx
-.\scripts\Run-Rust-Benchmark.ps1 -Suite issue -Format docx
-.\scripts\Run-Rust-Benchmark-Matrix.ps1 -MaxComparePages 1
-```
-
-The benchmark reuses the repository fixtures, references, and PDF comparison
-pipeline without executing the C# xUnit tests. Each run writes coverage data,
-Markdown and JSON reports, side-by-side images, and heatmaps under
-`artifacts/rust-benchmark/<suite>/<format>`.
+Historical visual reports from the shared MiniPdf benchmark are linked below.
+The original benchmark fixtures and tooling remain in the .NET repository;
+they are not required to build or test this Cargo workspace.
 
 - [Classic XLSX visual comparison](https://mini-software.github.io/minipdf-web-page/?language=rust&suite=classic&format=xlsx)
 - [Classic DOCX visual comparison](https://mini-software.github.io/minipdf-web-page/?language=rust&suite=classic&format=docx)
@@ -189,4 +178,11 @@ Actions.
 
 ## License
 
-[Apache License 2.0](../LICENSE).
+[Apache License 2.0](LICENSE).
+## Repository migration
+
+This implementation now lives in [https://github.com/PdfLibrarys/minipdf-rs](https://github.com/PdfLibrarys/minipdf-rs). Its language-specific
+Git history was preserved from [MiniPdf](https://github.com/mini-software/MiniPdf)
+(source commit `862ab485fdf8c5b3d3ec76afb6145f4ff68bf987`).
+The original repository maintains the .NET implementation. Open issues and
+pull requests for this implementation in this repository.

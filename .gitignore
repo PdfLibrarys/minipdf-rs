@@ -1,0 +1,70 @@
+## Build outputs
+**/bin/
+**/obj/
+**/target/
+**/__pycache__/
+**/.mypy_cache/
+**/.pytest_cache/
+**/.ruff_cache/
+**/*.egg-info/
+**/build/
+**/dist/
+**/node_modules/
+**/*.node
+**/*.tgz
+/npm/
+src/minipdf/_native.pyd
+src/minipdf/_native.abi3.so
+
+## IDE
+.vs/
+*.user
+*.suo
+
+## OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+~$*
+
+## NuGet
+*.nupkg
+
+## Wiki
+MiniPdf.wiki/
+/book
+
+## Book
+dotnet_ai_azure_book/
+
+## Script outputs
+tests/MiniPdf.Scripts/output/
+tests/MiniPdf.Scripts/pdf_output/
+
+## Benchmark
+tests/MiniPdf.Benchmark/reference_pdfs/
+tests/MiniPdf.Benchmark/__pycache__/
+/tests/MiniPdf.Scripts/output_docx
+/tests/MiniPdf.Scripts/pdf_output_docx
+/tests/MiniPdf.Benchmark/reference_pdfs_docx
+/tests/MiniPdf.Benchmark/reference_pdfs
+/tests/MiniPdf.Benchmark/office_pdfs
+/tests/MiniPdf.Benchmark/office_pdfs_docx
+tests/MiniPdf.Scripts/pdf_test_single/docx_classic01_single_paragraph.pdf
+MiniPdf.Web/publish.zip
+MiniPdf.Web/MiniPdf.Web.Client/wwwroot/fonts/
+/tests/MiniPdf.Scripts/pdf_output_baseline
+/tests/MiniPdf.Benchmark/minipdf_docx
+/tests/MiniPdf.Benchmark/output_docx
+/tests/Issue_Files/minipdf_xlsx
+/tests/Issue_Files/minipdf_docx
+/tests/Issue_Files/minipdf_docx_new
+/tests/Issue_Files/minipdf_xlsx
+/tests/Issue_Files/minipdf_pptx
+/tests/MiniPdf.Benchmark/reports/
+/tests/MiniPdf.Benchmark/reports_docx/
+/tests/Issue_Files/reports_xlsx/
+/tests/Issue_Files/reports_docx/
+/tests/Issue_Files/reports_pptx/
+/artifacts/*
+/tests/Issue_Files/office_docx
