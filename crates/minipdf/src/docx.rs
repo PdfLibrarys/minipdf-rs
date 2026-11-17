@@ -1808,8 +1808,8 @@ fn render_table(
         for cell in &row.cells {
             if cell.vertical_merge == VerticalMerge::Restart {
                 let mut end_row = row_index;
-                for next_row in (row_index + 1)..table.rows.len() {
-                    let Some(next_cell) = cell_at_grid(&table.rows[next_row], grid_index) else {
+                for (next_row, next) in table.rows.iter().enumerate().skip(row_index + 1) {
+                    let Some(next_cell) = cell_at_grid(next, grid_index) else {
                         break;
                     };
                     if next_cell.vertical_merge != VerticalMerge::Continue {
