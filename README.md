@@ -1,5 +1,7 @@
 # MiniPdf for Rust
 
+[English](README.md) | [zh-CN](docs/README.zh-CN.md) | [zh-TW](docs/README.zh-TW.md) | [ja](docs/README.ja.md) | [ko](docs/README.ko.md) | [it](docs/README.it.md) | [fr](docs/README.fr.md)
+
 [![crates.io](https://img.shields.io/crates/v/minipdf.svg)](https://crates.io/crates/minipdf)
 [![docs.rs](https://img.shields.io/docsrs/minipdf)](https://docs.rs/minipdf)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
